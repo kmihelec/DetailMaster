@@ -1,0 +1,43 @@
+.mainList {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    box-shadow:3px 3px 3px 3px silver;
+    background-color: white;
+}
+
+.listItem {
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 2rem 4rem;
+    text-decoration: none;
+    border: 1px solid grey;
+}
+
+.listItem:hover {
+    position: relative;
+    left: 3px;
+    background-color: #E8E8E8;
+    border-left: none;
+    transition: 0.3s;
+}
+
+.listItem:not(first-child){
+    border-top: 0
+}
+
+.listItemActive {
+    background-color: #E8E8E8;
+    border-right: none;
+    box-shadow: 8px 0   #E8E8E8;
+}
+
+@media screen and (max-width: 768px) {
+    .mainList {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .listItem:hover{
+        left:0;
+    }
+}

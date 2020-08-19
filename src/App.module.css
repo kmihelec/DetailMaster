@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #E8E8E8;
+
+}
+
+@media screen and (max-width: 768px) {
+  .App{
+    justify-content: center;
+  }
+}
+

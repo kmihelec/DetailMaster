@@ -1,0 +1,52 @@
+.personInfo {
+    padding: 4rem;
+    display: flex;
+    flex-basis: 70%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.personInfo h1 {
+    font-size: 2.3rem;
+    font-family: "Arial Black", sans-serif;
+}
+
+.info {
+    font-size: 1.4rem;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0.8rem;
+}
+
+.info:last-child{
+    font-size: 1rem;
+}
+
+.closeButton {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: white;
+    font-family: Arial,sans-serif;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.closeButton:hover {
+    background-color: #D0D0D0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.closeButton:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .personInfo {
+        text-align: center;
+    }
+    .closeButton{
+        align-self: center;
+    }
+}
